@@ -1,7 +1,7 @@
 package ch2_computational_complexity
 
 import (
-	"datastructure/pkg"
+	. "datastructure/pkg"
 	"testing"
 )
 
@@ -18,5 +18,5 @@ func TestSpaceComplexity(t *testing.T) {
 	spaceQuadraticRecur(n)
 	//指数阶
 	root := buildTree(n)
-	pkg.PrintTree(root)
+	PrintTree(root)
 }

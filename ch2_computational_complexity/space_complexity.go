@@ -1,7 +1,7 @@
 package ch2_computational_complexity
 
 import (
-	"datastructure/pkg"
+	. "datastructure/pkg"
 	"fmt"
 	"strconv"
 )
@@ -22,18 +22,18 @@ func function() int {
 	return 0
 }
 
-func alogorithm(n int) int {
-	const a = 0
-	b := 0
-	newNode(0)
-	c := function()
-	return a + b + c
-}
+// func alogorithm(n int) int {
+// 	const a = 0
+// 	b := 0
+// 	newNode(0)
+// 	c := function()
+// 	return a + b + c
+// }
 
 // 常数阶
 func spaceConstant(n int) {
 	// 常量、变量、对象占用O（1）空间
-	const a = 0
+	//const a = 0
 	b := 0
 	nums := make([]int, 10000)
 	node := newNode(0)
@@ -98,11 +98,11 @@ func spaceQuadraticRecur(n int) int {
 }
 
 // 指数阶 满二叉树
-func buildTree(n int) *pkg.TreeNode {
+func buildTree(n int) *TreeNode {
 	if n == 0 {
 		return nil
 	}
-	root := pkg.NewTreeNode(0)
+	root := NewTreeNode(0)
 	root.Left = buildTree(n - 1)
 	root.Right = buildTree(n - 1)
 	return root
