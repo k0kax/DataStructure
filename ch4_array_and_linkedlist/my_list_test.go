@@ -14,7 +14,7 @@ func TestMyList(t *testing.T) {
 	nums.add(2)
 	nums.add(5)
 	nums.add(4)
-	fmt.Printf("列表 nums = %v , 容量 = %v , 长度 = %v\n", nums.toArray(), nums.arrCapacity, nums.arrSize)
+	fmt.Printf("列表 nums = %v , 容量 = %v , 长度 = %v\n", nums.toArray(), nums.capacity(), nums.size())
 
 	//在中间插入元素
 	nums.insert(666, 3)
@@ -36,5 +36,5 @@ func TestMyList(t *testing.T) {
 	for i := 0; i < 10; i++ {
 		nums.add(i)
 	}
-	fmt.Printf("扩容后 列表 nums = %v , 容量 = %v , 长度 = %v\n", nums.toArray(), nums.arrCapacity, nums.arrSize)
+	fmt.Printf("扩容后 列表 nums = %v , 容量 = %v , 长度 = %v\n", nums.toArray(), nums.capacity(), nums.size())
 }

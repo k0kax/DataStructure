@@ -65,7 +65,7 @@ func traverse(nums []int) {
 // 查找数组 指定元素
 func find(nums []int, target int) int {
 	index := 0
-	for index, _ = range nums {
+	for index = range nums {
 		if nums[index] == target {
 			break
 		}
@@ -77,10 +77,10 @@ func find(nums []int, target int) int {
 func extend(nums []int, enlarge int) []int {
 	res := make([]int, len(nums)+enlarge) //扩容？新建一个兼容的数组罢了
 
-	for i, num := range nums {
-		res[i] = num
-	}
+	// for i, num := range nums {
+	// 	res[i] = num
+	// }
 	//与下面相同
-	//copy(res,nums)
+	copy(res, nums)
 	return res
 }
