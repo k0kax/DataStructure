@@ -9,7 +9,7 @@ func isPalindrome(x int) bool {
 		return false
 	}
 	arr := []int{}
-	for count := 0; x != 0; count++ { //x=0已经到达最高位
+	for x != 0 { //x=0已经到达最高位
 		arr = append(arr, x%10) //取每位对应的数字并存入切片
 		x = x / 10              //向前移动
 	}
