@@ -82,11 +82,11 @@ func TestArrayQueue(t *testing.T) {
 	}
 
 	//元素入队
-	queue.push(1)
-	queue.push(3)
-	queue.push(2)
-	queue.push(5)
-	queue.push(4)
+	queue.push(11)
+	queue.push(22)
+	queue.push(33)
+	queue.push(44)
+	queue.push(55)
 	fmt.Print("数组队列 queue = ")
 	PrintSlice(queue.toSlice())
 

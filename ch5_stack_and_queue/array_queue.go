@@ -1,6 +1,6 @@
 package ch5_stack_and_queue
 
-//环形队列  在一段固定的数组模拟队列
+//环形队列  在一段固定的数组模拟队列 长度可变版
 type arraryQueue struct {
 	nums        []int //存储队列元素的数组
 	front       int   //指向队首元素
