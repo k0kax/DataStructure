@@ -3,6 +3,7 @@ package ch6_hashing
 import "fmt"
 
 //简单设计哈希算法
+//测试文件:hash_map_test.go
 
 //加法哈希
 //对输入的每个字符的 ASCII 码进行相加，将得到的总和作为哈希值。
