@@ -8,5 +8,5 @@ import (
 func TestTwoSum(t *testing.T) {
 	nums := []int{2, 7, 11, 15} //切片
 	fmt.Println(nums)
-	fmt.Println(twoSum(nums, 9))
+	fmt.Println(twoSumII(nums, 26))
 }
